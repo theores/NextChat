@@ -524,18 +524,15 @@ export function ImagePreviewer(props: {
           </div>
 
           <div>
-            <div className={styles["main-title"]}>NextChat</div>
-            <div className={styles["sub-title"]}>
-              github.com/ChatGPTNextWeb/ChatGPT-Next-Web
-            </div>
-            <div className={styles["icons"]}>
+            <div className={styles["main-title"]}>AI会话记录</div>
+            {/* <div className={styles["icons"]}>
               <MaskAvatar avatar={config.avatar} />
               <span className={styles["icon-space"]}>&</span>
               <MaskAvatar
                 avatar={mask.avatar}
                 model={session.mask.modelConfig.model}
               />
-            </div>
+            </div> */}
           </div>
           <div>
             <div className={styles["chat-info-item"]}>

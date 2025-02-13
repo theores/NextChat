@@ -175,6 +175,8 @@
     .message {
       margin-bottom: 20px;
       display: flex;
+      flex-direction: column;
+      gap: 8px;
 
       .avatar {
         margin-right: 10px;
@@ -183,7 +185,7 @@
       .body {
         border-radius: 10px;
         padding: 8px 10px;
-        max-width: calc(100% - 104px);
+        max-width: 100%;
         box-shadow: var(--card-shadow);
         border: var(--border-in-light);
 
@@ -253,10 +255,13 @@
       }
 
       &-user {
-        flex-direction: row-reverse;
+        flex-direction: column;
+        gap: 8px;
 
         .avatar {
           margin-right: 0;
+          display: flex;
+          justify-content: right;
         }
 
         .body {
